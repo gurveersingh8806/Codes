@@ -1,0 +1,7 @@
+# Compiled executable files
+*.exe
+*.o
+*.out
+
+# VS Code temp files
+tempCodeRunnerFile.c

@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "string.h": "c",
+        "array": "c",
+        "memory": "c",
+        "functional": "c",
+        "istream": "c",
+        "tuple": "c",
+        "utility": "c"
+    }
+}
