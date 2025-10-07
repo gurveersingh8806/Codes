@@ -11,17 +11,6 @@
 class Solution {
 public:
 
-    void reverse(ListNode* temp,ListNode* &tail){
-        ListNode* prev = NULL;
-        ListNode* curr = temp;
-        ListNode* forw = NULL;
-
-        while(prev != tail){
-            
-        }
-
-    }
-
 
     ListNode* reverseKGroup(ListNode* head, int k) {
 
