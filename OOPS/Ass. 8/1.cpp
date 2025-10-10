@@ -6,11 +6,9 @@ class String {
     string str;
 
 public:
-    // Constructor
     String() {}
     String(string s) : str(s) {}
 
-    // (a) Toggle function
     void toggle() {
         for (int i = 0; i < str.length(); i++) {
             if (isupper(str[i]))
@@ -20,12 +18,10 @@ public:
         }
     }
 
-    // (b) Overload + operator to join two strings
     String operator+(const String &s) {
         return String(str + s.str);
     }
 
-    // Function to display the string
     void show() const {
         cout << str;
     }
