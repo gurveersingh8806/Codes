@@ -76,7 +76,18 @@ public:
 
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         
+        l1 = reverseList(l1);
+        l2 = reverseList(l2);
         ListNode* ans = add(l1,l2);
-        return ans->next;
+
+        ans = reverseList(ans);
+        ListNode* node = ans; 
+        while(node->next->val != -1){ 
+            node = node->next; 
+        }
+        
+        node->next = NULL; 
+        return ans;
+        
     }
 };
