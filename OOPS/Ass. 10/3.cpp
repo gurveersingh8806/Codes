@@ -3,7 +3,7 @@ using namespace std;
 
 class Sports {
 protected:
-    int score;   // sports score
+    int score;   
 
 public:
     void inputSports() {
@@ -18,7 +18,7 @@ public:
 
 class Exam {
 protected:
-    int marks;   // exam marks
+    int marks;   
 
 public:
     void inputExam() {

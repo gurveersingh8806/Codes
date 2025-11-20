@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-class Vehicle {             // Abstract class
+class Vehicle {            
 public:
-    virtual void startEngine() = 0;   // Pure virtual function
+    virtual void startEngine() = 0;  
 };
 
 class Car : public Vehicle {
@@ -27,10 +27,10 @@ int main() {
     Bike b;
 
     v = &c;
-    v->startEngine();       // calls Car's implementation
+    v->startEngine();       
 
     v = &b;
-    v->startEngine();       // calls Bike's implementation
+    v->startEngine();      
 
     return 0;
 }

@@ -3,22 +3,21 @@ using namespace std;
 
 class Counter {
 private:
-    static int count;     // stores how many objects created
-    Counter() {           // private constructor
+    static int count;     
+    Counter() {          
         count++;
     }
 
 public:
-    static Counter* create() {   // creates object + increments count
+    static Counter* create() {   
         return new Counter();
     }
 
-    static int getCount() {      // returns how many objects created
+    static int getCount() {     
         return count;
     }
 };
 
-// initialize static variable
 int Counter::count = 0;
 
 int main() {

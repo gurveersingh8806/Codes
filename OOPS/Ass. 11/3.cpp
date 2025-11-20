@@ -25,11 +25,10 @@ public:
 int main() {
     C obj;
 
-    A* pa = &obj;   // pointer of base class A
-    B* pb = &obj;   // pointer of base class B
+    A* pa = &obj;   
+    B* pb = &obj;   
 
-    pa->display();  // calls C::display()
-    pb->display();  // calls C::display()
-
+    pa->display();  
+    pb->display();  
     return 0;
 }

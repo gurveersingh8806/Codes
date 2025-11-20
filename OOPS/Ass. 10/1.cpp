@@ -27,7 +27,7 @@ private:
 
 public:
     void inputStudent() {
-        inputPerson();  // get name & age
+        inputPerson();  
         cout << "Enter roll number: ";
         cin >> rollNo;
         cout << "Enter marks: ";
@@ -35,7 +35,7 @@ public:
     }
 
     void displayStudent() const {
-        displayPerson();  // show name & age
+        displayPerson();  
         cout << "Roll No: " << rollNo << endl;
         cout << "Marks: " << marks << endl;
     }

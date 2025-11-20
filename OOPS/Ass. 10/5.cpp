@@ -16,7 +16,6 @@ public:
     }
 };
 
-// Employee and Student inherit Person virtually
 class Employee : virtual public Person {
 protected:
     double salary;
@@ -50,7 +49,7 @@ public:
 class WorkingStudent : public Employee, public Student {
 public:
     void inputWorkingStudent() {
-        inputPerson();       // only one Person due to virtual inheritance
+        inputPerson();      
         inputEmployee();
         inputStudent();
     }

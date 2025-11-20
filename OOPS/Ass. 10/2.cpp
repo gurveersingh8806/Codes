@@ -39,7 +39,7 @@ public:
 
 class ElectricCar : public Car {
 private:
-    int batteryCapacity;   // in kWh
+    int batteryCapacity;  
 
 public:
     void inputElectricCar() {

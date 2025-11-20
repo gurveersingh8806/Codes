@@ -3,7 +3,7 @@ using namespace std;
 
 class Shape {
 public:
-    virtual double area() {        // virtual → enables runtime polymorphism
+    virtual double area() {        
         return 0;
     }
 };
@@ -15,7 +15,7 @@ private:
 public:
     Circle(double r) : radius(r) {}
 
-    double area() override {        // overriding
+    double area() override {        
         return 3.14159 * radius * radius;
     }
 };
@@ -33,15 +33,15 @@ public:
 };
 
 int main() {
-    Shape* ptr;          // base class pointer
+    Shape* ptr;         
 
     Circle c(5);
     Rectangle r(4, 6);
 
-    ptr = &c;            // pointing to Circle
+    ptr = &c;           
     cout << "Circle Area = " << ptr->area() << endl;
 
-    ptr = &r;            // pointing to Rectangle
+    ptr = &r;           
     cout << "Rectangle Area = " << ptr->area() << endl;
 
     return 0;

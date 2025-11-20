@@ -8,7 +8,6 @@ int main() {
 
     char ch;
 
-    // 1. READ ORIGINAL FILE → ENCRYPT → WRITE TO encrypted.txt
     fin.open("original.txt");
     fout.open("encrypted.txt");
 
@@ -17,15 +16,14 @@ int main() {
         return 1;
     }
 
-    while (fin.get(ch)) {      // read character-by-character
-        ch = ch + 1;           // encrypt by shifting ASCII +1
-        fout.put(ch);          // write encrypted character
+    while (fin.get(ch)) {      
+        ch = ch + 1;           
+        fout.put(ch);         
     }
 
     fin.close();
     fout.close();
 
-    // 2. READ encrypted.txt → DECRYPT → WRITE TO decrypted.txt
     fin.open("encrypted.txt");
     fout.open("decrypted.txt");
 
@@ -35,8 +33,8 @@ int main() {
     }
 
     while (fin.get(ch)) {
-        ch = ch - 1;           // decrypt by shifting ASCII -1
-        fout.put(ch);          // write original character
+        ch = ch - 1;           
+        fout.put(ch);          
     }
 
     fin.close();

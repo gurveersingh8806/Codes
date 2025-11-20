@@ -3,7 +3,7 @@ using namespace std;
 
 class Base {
 public:
-    virtual ~Base() {     // try removing 'virtual' to see the difference
+    virtual ~Base() {   
         cout << "Base destructor\n";
     }
 };
@@ -22,7 +22,6 @@ int main() {
     arr[1] = new Derived();
     arr[2] = new Derived();
 
-    // Delete only some objects
     delete arr[0];
     delete arr[2];
 
