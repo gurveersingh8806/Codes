@@ -30,7 +30,7 @@ void merge(int arr[],int s, int e){
         arr[k++] = a[i++];
         else
         arr[k++] = b[j++];        
-    }
+    }''
 
     while(i<len1)
     arr[k++] = a[i++];
