@@ -37,7 +37,10 @@ int main() {
     pq.push({0, S, 0});
 
     while (!pq.empty()) {
-        auto [d, node, used] = pq.top();
+        auto temp = pq.top();
+        int d = get<0>(temp);
+        int node = get<1>(temp);
+        int used = get<2>(temp);
         pq.pop();
 
         if (d > dist[node][used]) continue;
